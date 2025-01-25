@@ -5,7 +5,7 @@ import { options } from "../api/auth/[...nextauth]/options";
 import Header from "@/components/layout/Header";
 import CustomSessionProvider from "./SessionProvider";
 import ThemeToggleV from "@/components/layout/ThemeToggleV";
-import ThemeToggleH from "@/components/layout/ThemeToggleH";
+// import ThemeToggleH from "@/components/layout/ThemeToggleH";
 import WhatsAppBtn from "@/components/layout/WhatsAppBtn";
 import BackToTop from "@/components/layout/BackToTop";
 import Footer from "@/components/layout/footer/Footer";
@@ -37,11 +37,11 @@ export default async function RootLayout({
           <Footer lang={lang} />
           <BackToTop />
           {!isLoggedIn && <WhatsAppBtn lang={lang} />}
-          {isLoggedIn && session?.user.role === "manager" && (
+          {/* {isLoggedIn && session?.user.role === "manager" && (
             <div className="fixed z-50 right-0 top-1/2">
               <ThemeToggleH />
             </div>
-          )}
+          )} */}
           <ThemeToggleV />
         </CustomSessionProvider>
       </body>

@@ -4,7 +4,7 @@ import { getServerSession } from "next-auth";
 import { options } from "../api/auth/[...nextauth]/options";
 import Header from "@/components/layout/Header";
 import CustomSessionProvider from "./SessionProvider";
-import ThemeToggleV from "@/components/layout/ThemeToggleV";
+// import ThemeToggleV from "@/components/layout/ThemeToggleV";
 // import ThemeToggleH from "@/components/layout/ThemeToggleH";
 import WhatsAppBtn from "@/components/layout/WhatsAppBtn";
 import BackToTop from "@/components/layout/BackToTop";
@@ -42,7 +42,7 @@ export default async function RootLayout({
               <ThemeToggleH />
             </div>
           )} */}
-          <ThemeToggleV />
+          {/* <ThemeToggleV /> */}
         </CustomSessionProvider>
       </body>
     </html>

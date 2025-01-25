@@ -10,6 +10,8 @@ const FlipBoxesComp = ({
     text: string;
     titleTwo: string;
     textTwo: string;
+    imgTwo: string;
+    img: string;
   }[];
 }) => {
   return (

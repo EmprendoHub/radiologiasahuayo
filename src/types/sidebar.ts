@@ -18,3 +18,5 @@ export type SideBarItemProps = {
   url: string;
   dropdownItems?: DropdownItem[];
 };
+
+export type paramsType = { lang: Promise<string> };

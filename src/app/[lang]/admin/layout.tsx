@@ -5,10 +5,10 @@ export default async function AdminLayout({
   children,
   params,
 }: {
-  params: { lang: string };
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }) {
-  const lang = params.lang;
+  const lang = (await params).lang;
   const { admin } = await getDictionary(lang);
   return (
     <div className="max-w-full pr-2">

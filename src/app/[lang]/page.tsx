@@ -6,14 +6,18 @@ import HeroSlider from "@/components/home/HeroSlider";
 import SingleSideToSide from "@/components/home/SingleSideToSide";
 import ContactInner from "@/components/home/ContactInner";
 
-export default async function Home({ params }: { params: { lang: string } }) {
-  const { lang } = await params;
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const lang = (await params).lang;
   const { homeDic, flipBoxes, contactDic, categoryDic } = await getDictionary(
     lang
   );
 
   return (
-    <div className=" overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <ImageHero homeDic={homeDic} lang={lang} />
       <DoubleSideToSide homeDic={homeDic} lang={lang} />
       <CategoriesComp categoryDic={categoryDic} />

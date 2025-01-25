@@ -24,7 +24,7 @@ export default async function RootLayout({
 }>) {
   const session = await getServerSession(options);
   const isLoggedIn = Boolean(session?.user);
-  const { lang } = await params;
+  const lang = (await params).lang;
   return (
     <html lang={`${lang}`}>
       <body

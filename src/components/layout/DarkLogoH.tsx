@@ -10,7 +10,7 @@ const DarkLogoH = ({
 }) => {
   return (
     <div className={`relative flex ${className}`}>
-      <Link aria-label="light-logo" href={`/${lang}/`}>
+      <Link aria-label="dark-logo" href={`/${lang}/`}>
         <Image
           alt="image"
           src={"/logos/dark_logo_horizontal.webp"}

@@ -84,8 +84,8 @@ const MobileMenu = ({
             >
               <AiOutlineClose />
             </p>
-            <div className="relative flex h-full flex-col mb-5">
-              <WhiteLogoH className={"mb-5"} lang={lang} />
+            <div className="relative flex items-center justify-center h-full flex-col mb-5">
+              <WhiteLogoH className={"mb-5"} />
               <motion.div
                 variants={containerVariants}
                 initial="initial"
@@ -114,7 +114,9 @@ const MobileMenu = ({
                 <Link
                   aria-label="Facebook"
                   target="_blank"
-                  href={"https://www.facebook.com/radiologiasahuayo"}
+                  href={
+                    "https://www.facebook.com/profile.php?id=61553059803842"
+                  }
                   className="relative flex items-center justify-center group"
                 >
                   <svg className={`${styles.circle}`}>
@@ -172,7 +174,7 @@ const MobileMenu = ({
                 <Link
                   aria-label="WhatsApp"
                   target="_blank"
-                  href={"https://wa.me/523931021001"}
+                  href={"https://wa.me/523535317465"}
                   className="relative flex items-center justify-center group"
                 >
                   <svg className={`${styles.circle}`}>
@@ -235,14 +237,11 @@ const MobileNavLink = ({
   toggleMobileMenu: () => void;
 }) => {
   return (
-    <motion.div
-      variants={mobileNavLinksVariants}
-      className="text-xl uppercase "
-    >
+    <motion.div variants={mobileNavLinksVariants} className="text-base  ">
       <Link
         href={href}
         onClick={toggleMobileMenu}
-        className="relative group flex items-center text-lg font-primary p-3 
+        className="relative group flex items-center  font-light p-3 
           "
       >
         <span className={`${styles.bouncingBall}   hidden group-hover:block`} />

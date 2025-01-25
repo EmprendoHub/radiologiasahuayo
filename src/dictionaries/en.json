@@ -27,32 +27,32 @@
       "phone": "+52 353-246-4146"
     },
     "addressTwo": {
-      "ubicacion": "Carr. Sahuayo - Cojumatlan No. 1850",
+      "ubicacion": "Calle Hospital General 245",
       "addressOne": "",
-      "addressTwo": "No. 1850",
+      "addressTwo": "No. 245",
       "city": "Sahuayo ",
       "hood": "",
       "state": "Michoacan",
-      "zip": "59000",
+      "zip": "59035",
       "country": "Mexico",
-      "phone": "393 102 1001"
+      "phone": "+52 353 531 7465"
     },
     "widgettwo": {
-      "title": "Products",
+      "title": "Services",
       "links": [
-        { "title": "Additives", "url": "/productos?category=Additives" },
-        { "title": "ATF-Dexron", "url": "/productos?category=ATF-DEXRON" },
+        { "title": "Ultrasound", "url": "/productos?category=Additives" },
+        { "title": "X Rays", "url": "/productos?category=ATF-DEXRON" },
         {
-          "title": "Hydraulics",
+          "title": "Tomography",
           "url": "/productos?category=Hydraulics"
         },
-        { "title": "Motorcycles", "url": "/productos?category=Motorcycles" },
+        { "title": "Mammography", "url": "/productos?category=Motorcycles" },
         {
-          "title": "Racing",
+          "title": "Electrocardiogram",
           "url": "/productos?category=Racing"
         },
         {
-          "title": "RRCCA",
+          "title": "Checkup Packages",
           "url": "/productos?category=RRCCA"
         }
       ]
@@ -61,9 +61,10 @@
       "title": "Site",
       "links": [
         { "title": "Home", "url": "/" },
-        { "title": "Products", "url": "/productos" },
-        { "title": "Contact", "url": "/#contacto" },
-        { "title": "About Us", "url": "/acerca" }
+        { "title": "Who are we", "url": "/productos" },
+        { "title": "Studies and services", "url": "/#contacto" },
+        { "title": "Alliances, agreements and insurance", "url": "/acerca" },
+        { "title": "Contact", "url": "/acerca" }
       ]
     },
     "widgetfour": {
@@ -174,8 +175,8 @@
       "img": "/images/oil_team.webp"
     },
     "sideText": {
-      "title": "Take Your Engine Care to the",
-      "titleTwo": "Next Level",
+      "title": "Fast and Accurate",
+      "titleTwo": " Results",
       "subtitle": "We focus on delivering the best oil solutions, so you can focus on the road ahead.",
       "text": "Unidad de Diagnóstico Dr. Gerardo Amezcua is committed to providing high-quality oils that meet the needs of every engine. Let us help you achieve optimal performance.",
       "btnText": "Contact Us",
@@ -395,11 +396,11 @@
   "contactDic": {
     "hero": {
       "pretitle": "GET IN TOUCH",
-      "title": "We would like to meet you."
+      "title": "We are at your service."
     },
     "contactInfo": {
-      "pretitle": "Contact Us",
-      "title": "We would like to meet you. Feel free to",
+      "pretitle": "Questions?",
+      "title": "",
       "titleTwo": "get in touch.",
       "subtitle": "Let us discover how we can help improve your trade experience.",
       "location": "Location",
@@ -416,7 +417,7 @@
       "state": "Michoacan",
       "zip": "59010",
       "country": "Mexico",
-      "phone": "+52 353-246-4146",
+      "phone": "+52 353 531 7465",
       "mapImage": "/images/Colima61_.webp",
       "mapUrl": "https://maps.app.goo.gl/c5twJrvpb3KpXMhH8"
     },
@@ -429,7 +430,7 @@
       "state": "Michoacan",
       "zip": "59000",
       "country": "MEXICO",
-      "phone": "+52 393 102 1001",
+      "phone": "+52 353 531 7465",
       "mapImage": "/images/hudson_map.webp",
       "mapUrl": "https://maps.app.goo.gl/ZGz6MvactPHiEbPD6"
     },

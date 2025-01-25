@@ -99,7 +99,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
         </div>
       </div>
       {/* bottom icons */}
-      <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 z-20 w-full px-20 maxxlg:px-5">
+      <div className="absolute -bottom-20 maxxlg:-bottom-32 maxlg:-bottom-20 left-1/2 transform -translate-x-1/2 z-20 w-full px-20 maxxlg:px-5">
         <div className="flex items-center justify-center gap-5 maxsm:gap-1 w-full bg-white py-4 shadow-sm shadow-slate-400">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}

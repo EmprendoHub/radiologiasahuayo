@@ -15,7 +15,7 @@ const ContactComponent = ({
     <div className="bg-white dark:bg-primary py-12 px-40 maxxlg:px-20 maxlg:px-5 h-full overflow-x-hidden ">
       {/* Title */}
       <div className="w-full flex flex-col h-full gap-x-5 maxmd:flex-col justify-center items-center mb-2">
-        <div className="w-1/2 maxmd:w-full pr-10 maxmd:px-1 maxmd:mt-10  ">
+        <div className="w-1/2 maxmd:w-full  maxmd:px-1 maxmd:mt-10  ">
           <p className="uppercase font-secondary tracking-widest text-sm text-gray-500 text-center">
             {contactDic.contactInfo.pretitle}
           </p>
@@ -46,7 +46,9 @@ const ContactComponent = ({
                 <Link
                   aria-label="Facebook"
                   target="_blank"
-                  href={"https://www.facebook.com/radiologiasahuayo"}
+                  href={
+                    "https://www.facebook.com/profile.php?id=61553059803842"
+                  }
                   className="relative flex items-center justify-center group"
                 >
                   <svg className={`${styles.circle}`}>
@@ -104,7 +106,7 @@ const ContactComponent = ({
                 <Link
                   aria-label="WhatsApp"
                   target="_blank"
-                  href={"https://wa.me/523931021001"}
+                  href={"https://wa.me/523535317465"}
                   className="relative flex items-center justify-center group"
                 >
                   <svg className={`${styles.circle}`}>

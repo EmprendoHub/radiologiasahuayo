@@ -30,14 +30,13 @@ const FooterMenu = ({
     >
       <div className="flex maxsm:flex-col items-start justify-between gap-4 w-full px-3">
         <div className="font-secondary text-xs">
-          <WhiteLogoH lang={lang} />
+          <WhiteLogoH />
           <p className=" mt-2">{localeFooter.addressTwo.ubicacion}</p>
-          <p className=" mt-2">{localeFooter.addressTwo.addressOne}</p>
           <p className="">
-            {localeFooter.addressTwo.city}, {localeFooter.addressTwo.hood}
+            {localeFooter.addressTwo.city} {localeFooter.addressTwo.hood}
           </p>
-          <p className=" mb-3">
-            {localeFooter.addressTwo.state}, {localeFooter.addressTwo.zip}
+          <p className=" mb-1">
+            {localeFooter.addressTwo.state} {localeFooter.addressTwo.zip}
           </p>
           <p className=" mb-3">{localeFooter.addressTwo.phone}</p>
         </div>

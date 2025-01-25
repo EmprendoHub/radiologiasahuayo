@@ -1,7 +1,7 @@
 import ContactComponent from "./ContactComponent";
 import Image from "next/image";
 import React from "react";
-import coverImage from "../../../public/images/cover_image.webp";
+import coverImage from "../../../public/images/radiologia.jpg";
 import { ContactDicProp, HomeDicProps } from "@/types/dictionaries";
 
 const ContactInner = ({
@@ -14,7 +14,7 @@ const ContactInner = ({
   return (
     <div className="relative h-full  overflow-x-hidden" id="contacto">
       <div className="w-full h-[400px] overflow-hidden top-0 relative flex justify-center items-center flex-col ">
-        <div className="absolute bg-dark bg-opacity-40 w-full h-full z-0" />
+        <div className="absolute bg-sky-800 bg-opacity-40 w-full h-full z-0" />
         <Image
           src={coverImage}
           width={1920}

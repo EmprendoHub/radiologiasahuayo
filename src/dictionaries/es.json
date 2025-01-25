@@ -24,35 +24,35 @@
       "state": "Michoacan",
       "zip": "59010",
       "country": "Mexico",
-      "phone": "353-246-4146"
+      "phone": "+52 353-246-4146"
     },
     "addressTwo": {
-      "ubicacion": "Carr. Sahuayo - Cojumatlan No. 1850",
+      "ubicacion": "Calle Hospital General No. 245",
       "addressOne": "",
-      "addressTwo": "No. 1850",
-      "city": "Sahuayo, ",
+      "addressTwo": "No. 245",
+      "city": "Sahuayo ",
       "hood": "",
       "state": "Michoacan",
-      "zip": "59000",
+      "zip": "59035",
       "country": "Mexico",
-      "phone": "+52 393 102 1001"
+      "phone": "+52 353 531 7465"
     },
     "widgettwo": {
-      "title": "Productos",
+      "title": "Servicios",
       "links": [
-        { "title": "Aditivos", "url": "/productos?category=Additives" },
-        { "title": "ATF-Dexron", "url": "/productos?category=ATF-DEXRON" },
+        { "title": "Ultrasonido", "url": "/productos?category=Additives" },
+        { "title": "Rayos X", "url": "/productos?category=ATF-DEXRON" },
         {
-          "title": "Hidráulicos",
+          "title": "Tomografía",
           "url": "/productos?category=Hidráulicos"
         },
-        { "title": "Motocicletas", "url": "/productos?category=Motocicletas" },
+        { "title": "Mamografía", "url": "/productos?category=Motocicletas" },
         {
-          "title": "Carreras",
+          "title": "Electrocardiograma",
           "url": "/productos?category=Carreras"
         },
         {
-          "title": "RRCCA",
+          "title": "Paquetes de Checkups",
           "url": "/productos?category=RRCCA"
         }
       ]
@@ -61,9 +61,10 @@
       "title": "Sitio",
       "links": [
         { "title": "Inicio", "url": "/" },
-        { "title": "Productos", "url": "/productos" },
-        { "title": "Contacto", "url": "/#contacto" },
-        { "title": "Nosotros", "url": "/acerca" }
+        { "title": "Quienes somos", "url": "/productos" },
+        { "title": "Estudios y servicios", "url": "/#contacto" },
+        { "title": "Alianzas convenios y seguros", "url": "/acerca" },
+        { "title": "Contacto", "url": "/acerca" }
       ]
     },
     "widgetfour": {
@@ -174,8 +175,8 @@
       "img": "/images/equipo_de_trabajo_marketing.webp"
     },
     "sideText": {
-      "title": "Lleva tu negocio al",
-      "titleTwo": "siguiente nivel",
+      "title": "Resultados Rápidos",
+      "titleTwo": " y Precisos",
       "subtitle": "Nos encargamos de negociar las mejores ofertas para que tú te concentres en crecer.",
       "text": "Estamos en constante búsqueda de ampliar nuestra red de clientes y ofrecer el más alto estándar de servicio. Esperamos que nos permitas servirte.",
       "btnText": "Contáctanos",
@@ -393,14 +394,14 @@
   },
   "contactDic": {
     "hero": {
-      "pretitle": "PONERSE EN CONTACTO",
-      "title": "Nos gustaría conocerte."
+      "pretitle": "PONTE EN CONTACTO",
+      "title": "Estamos a tus ordenes."
     },
     "contactInfo": {
       "pretitle": "Contáctenos",
-      "title": "Nos gustaría conocerte. Siéntete libre de",
-      "titleTwo": "mantenerte en contacto.",
-      "subtitle": "Descubramos cómo podemos ayudarle a mejorar su experiencia comercial.",
+      "title": "¿Preguntas?",
+      "titleTwo": "",
+      "subtitle": "Comunícate con uno de nuestros representantes para aclarar tus dudas.",
       "location": "Ubicación",
       "social": "Redes Sociales",
       "questions": "Preguntas Generales",
@@ -428,7 +429,7 @@
       "state": "Michoacan",
       "zip": "59000",
       "country": "MEXICO",
-      "phone": "+52 393 102 1001",
+      "phone": "+52 353 531 7465",
       "mapImage": "/images/hudson_map.webp",
       "mapUrl": "https://maps.app.goo.gl/ZGz6MvactPHiEbPD6"
     },

@@ -63,7 +63,9 @@ const MotionHeader = ({
             !transparency ? "" : "bg-black bg-opacity-50"
           }`}
         >
-          <WhiteLogoH lang={lang} />
+          <Link aria-label="light-logo" href={`/${lang}/`}>
+            <WhiteLogoH />
+          </Link>
           <div className="relative flex items-center justify-end w-full pr-5">
             <motion.div
               variants={containerVariants}

@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { getServerSession } from "next-auth";
+import { options } from "../api/auth/[...nextauth]/options";
 import Header from "@/components/layout/Header";
 import CustomSessionProvider from "./SessionProvider";
 import ThemeToggleV from "@/components/layout/ThemeToggleV";
+import ThemeToggleH from "@/components/layout/ThemeToggleH";
+import WhatsAppBtn from "@/components/layout/WhatsAppBtn";
 import BackToTop from "@/components/layout/BackToTop";
 import Footer from "@/components/layout/footer/Footer";
 
@@ -11,14 +15,16 @@ export const metadata: Metadata = {
   description: "Mejor calidad por el mejor precio",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }>) {
-  const { lang } = params;
+  const session = await getServerSession(options);
+  const isLoggedIn = Boolean(session?.user);
+  const { lang } = await params;
   return (
     <html lang={`${lang}`}>
       <body
@@ -30,7 +36,12 @@ export default function RootLayout({
           {children}
           <Footer lang={lang} />
           <BackToTop />
-
+          {!isLoggedIn && <WhatsAppBtn lang={lang} />}
+          {isLoggedIn && session?.user.role === "manager" && (
+            <div className="fixed z-50 right-0 top-1/2">
+              <ThemeToggleH />
+            </div>
+          )}
           <ThemeToggleV />
         </CustomSessionProvider>
       </body>

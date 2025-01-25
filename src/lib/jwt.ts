@@ -1,8 +1,9 @@
+import { PayloadAction } from "@reduxjs/toolkit";
 import jwt from "jsonwebtoken";
 import { decode } from "next-auth/jwt";
 
 // signing jwt
-export function signJwtToken(payload: any, options = {}) {
+export function signJwtToken(payload: PayloadAction, options = {}) {
   const secret = process.env.NEXTAUTH_SECRET!;
   const token = jwt.sign(payload, secret, options);
   return token;

@@ -26,7 +26,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
     <div className=" relative">
       <div className="w-full bg-light-gradient h-[700px] maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
         {/* overlay */}
-        <div className="absolute bg-black bg-opacity-40 w-full h-full z-20" />
+        <div className="absolute bg-black bg-opacity-40 w-full h-full z-20 " />
         <Image
           src={coverImage}
           width={1920}

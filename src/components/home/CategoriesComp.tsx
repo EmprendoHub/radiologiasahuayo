@@ -55,7 +55,7 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="absolute z-50 text-white py-2 px-8 text-sm top-[40%] font-primary tracking-wide">
+              <span className="absolute z-50 text-white py-2 px-8 text-2xl top-[40%] font-primary tracking-wide">
                 {category.title}
               </span>
               {/* Octagonal overlay */}

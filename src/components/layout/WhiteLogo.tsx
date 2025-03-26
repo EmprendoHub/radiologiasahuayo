@@ -9,7 +9,7 @@ const WhiteLogoH = ({ className }: { className?: string }) => {
         width={350}
         height={350}
         priority
-        className={`overflow-hidden transition-all  ease-in-out w-48 py-2 h-auto`}
+        className={`overflow-hidden transition-all  ease-in-out w-[350px] py-2 h-auto`}
       />
     </div>
   );

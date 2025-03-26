@@ -9,6 +9,16 @@ import CustomSessionProvider from "./SessionProvider";
 import WhatsAppBtn from "@/components/layout/WhatsAppBtn";
 import BackToTop from "@/components/layout/BackToTop";
 import Footer from "@/components/layout/footer/Footer";
+import localFont from "next/font/local";
+
+// Font files can be colocated inside of `app`
+const myFont = localFont({
+  src: "../../fonts/Swis721_BT_Bold.ttf",
+  display: "swap",
+  variable: "--font-square-bold",
+});
+
+console.log("myFont", myFont);
 
 export const metadata: Metadata = {
   title: "Radiología Sahuayo",
@@ -28,7 +38,7 @@ export default async function RootLayout({
   return (
     <html lang={`${lang}`}>
       <body
-        className={`body-class relative overflow-x-hidden h-full dark:bg-dark bg-white dark:text-dark`}
+        className={`body-class relative overflow-x-hidden h-full dark:bg-dark bg-white dark:text-dark ${myFont.variable}`}
       >
         <CustomSessionProvider>
           <Header lang={lang} />

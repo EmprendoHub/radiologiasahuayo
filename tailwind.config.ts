@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Oswald", "sans-serif"],
+        primary: ["var(--font-square-bold)"],
         secondary: ["Montserrat", "sans-serif"],
       },
       colors: {

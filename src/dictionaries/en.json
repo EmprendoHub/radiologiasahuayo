@@ -107,31 +107,40 @@
     },
     "sliders": [
       {
-        "preTitle": "Engine Care Experts",
-        "title": "Accurate Electrocardiograms ",
-        "titleTwo": "to Monitor Your Heart",
-        "text": "Monitor your heart health with ECGs performed by specialists. Fast and accurate results that give you peace of mind.",
-        "btnText": "Schedule your study now",
-        "btnPath": "/en/#contacto",
+        "preTitle": "Experts in Manufacturing",
+        "title": "Accurate Electrocardiograms",
+        "titleTwo": " to Monitor Your Heart",
+        "text": "Monitor your heart health with electrocardiograms performed by specialists. Fast and accurate results that give you peace of mind.",
+        "btnText": "Book your appointment today",
+        "btnPath": "/es/#contacto",
         "imgPath": "/images/slider1.webp"
       },
       {
-        "preTitle": "High-Quality Products",
-        "title": "High Quality X-Rays ",
-        "titleTwo": "for Accurate Diagnoses",
+        "preTitle": "Quality Products",
+        "title": "High-Quality X-Rays",
+        "titleTwo": " for Precise Diagnoses",
         "text": "Get clear and reliable radiological images for an accurate diagnosis. Our advanced equipment ensures quality in every study.",
         "btnText": "Schedule your study now",
-        "btnPath": "/en/#contacto",
+        "btnPath": "/es/#contacto",
         "imgPath": "/images/slider2.webp"
       },
       {
-        "preTitle": "Your Engine's Best Friend",
-        "title": "Advanced Technology CT Scans",
-        "titleTwo": " for Complex Diagnoses",
-        "text": "Perform your studies with advanced tomography equipment. Precision, speed and comfort in one place to meet your medical needs.",
+        "preTitle": "Strategic Partner",
+        "title": "CT Scans with",
+        "titleTwo": " Advanced Technology for Complex Diagnoses",
+        "text": "Perform your studies with advanced CT scan equipment. Precision, speed, and comfort in one place to meet your medical needs.",
         "btnText": "Book your CT scan here",
-        "btnPath": "/en/#contacto",
+        "btnPath": "/es/#contacto",
         "imgPath": "/images/slider3.webp"
+      },
+      {
+        "preTitle": "The Best Team",
+        "title": "Ultrasound",
+        "titleTwo": " with Advanced Technology for Complex Diagnoses",
+        "text": "Perform your studies with advanced ultrasound equipment. Precision, speed, and comfort in one place to meet your medical needs.",
+        "btnText": "Book your ultrasound here",
+        "btnPath": "/es/#contacto",
+        "imgPath": "/images/slider4.webp"
       }
     ],
     "infiniteSlider": {

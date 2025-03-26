@@ -25,7 +25,7 @@ const ThreeDFlipBoxComp = ({
     FaIcons[data.icon as keyof typeof FaIcons];
   return (
     <div className="flip-card m-4 maxlg:mx-2 maxmd:mx-1 maxsm:my-2 ">
-      <div className="flip-card-front  w-[800px] maxlg:w-[650px] maxmd:w-[600px] maxsm:w-[450px] min-h-[340px] ">
+      <div className="flip-card-front  w-[800px] maxlg:w-[550px] maxmd:w-[600px] maxsm:w-[450px] min-h-[340px] ">
         <div className="inner p-5 maxmd:p-3 flex flex-col justify-center items-center  text-white">
           {IconComponent && (
             <IconComponent className="text-4xl mb-3 text-white dark:text-white" />
@@ -43,12 +43,12 @@ const ThreeDFlipBoxComp = ({
         />
         <div className={className} />
       </div>
-      <div className="flip-card-back w-[800px] maxlg:w-[650px] maxmd:w-[600px] maxsm:w-[450px] min-h-[340px]  ">
+      <div className="flip-card-back w-[800px] maxlg:w-[550px] maxmd:w-[600px] maxsm:w-[450px] min-h-[340px]  ">
         <div className="inner p-5 maxsm:p-5 flex flex-col justify-center items-center">
           {IconComponent && (
             <IconComponent className="text-4xl mb-3 text-white" />
           )}
-          <h3 className="text-white text-4xl">{data?.titleTwo}</h3>
+          <h3 className="text-white text-5xl">{data?.titleTwo}</h3>
           <p className="text-white ">{data?.textTwo}</p>
         </div>
         <Image

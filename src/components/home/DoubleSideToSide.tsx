@@ -13,7 +13,7 @@ const DoubleSideToSide = ({
   lang: string;
 }) => {
   return (
-    <div className="w-full min-h-full bg-white dark:bg-primary pt-20">
+    <div className="w-full min-h-full bg-white dark:bg-primary pt-60 pb-40">
       <div className="h-full py-8">
         {/* Top Side */}
         <div className="h-full max-w-5xl mx-auto m-8">
@@ -131,7 +131,7 @@ const DoubleSideToSide = ({
           </div>
         </div>
         {/* Bottom Side */}
-        <div className="h-full max-w-5xl mx-auto m-8">
+        <div className="h-full max-w-5xl mx-auto m-8 mt-20">
           <div className="flex maxmd:flex-wrap  maxmd:h-full items-center justify-center">
             {/* Text */}
             <div className="w-6/12 maxmd:w-full px-12">

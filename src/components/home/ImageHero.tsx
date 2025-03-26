@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-// import coverImage from "../../../public/videos/xray_video.mp4";
+import coverImage from "../../../public/images/xray-scaled.jpg";
 // import Image from "next/image";
-import { GiDiscussion } from "react-icons/gi";
+import { GiDiscussion, GiUltrasound } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { ButtonMotion } from "../motion/ButtonMotion";
 import { FaDiagnoses, FaXRay } from "react-icons/fa";
-import { MdOutlineBiotech } from "react-icons/md";
+import Image from "next/image";
 
 type Props = {
   homeDic: {
@@ -24,26 +24,19 @@ type Props = {
 const ImageHero = ({ homeDic, lang }: Props) => {
   return (
     <div className=" relative">
-      <div className=" w-full bg-light-gradient h-[700px] maxmd:h-[1000px] overflow-hidden top-0 relative flex justify-center items-center flex-col ">
+      <div className="w-full bg-light-gradient h-[700px] maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
         {/* overlay */}
-        {/* <div className="absolute bg-black bg-opacity-40 w-full h-full z-0" /> */}
-        {/* <Image
+        <div className="absolute bg-black bg-opacity-40 w-full h-full z-20" />
+        <Image
           src={coverImage}
           width={1920}
           height={1080}
           priority
           loading="eager"
           alt="portfolio image"
-          className="w-[60%] h-auto absolute bottom-0 right-0 z-10"
-        /> */}
-        <div className="absolute z-10 bottom-10 right-60 maxlg:right-0 maxsm:right-10 w-[500px] maxsm:w-[400px]">
-          <video width={1080} height={1080} autoPlay loop muted>
-            <source src={"/videos/xray_video_2.mp4"} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <div className="absolute top-40 maxlg:top-20 maxmd:top-28 left-20 maxlg:left-5 z-10 text-white text-5xl maxlg:text-4xl maxsm:text-4xl font-primary w-[60%] maxmd:w-[90%] ">
+          className="w-auto h-full absolute top-0 right-0 z-10"
+        />
+        <div className=" pl-10 z-20 text-white text-6xl maxlg:text-5xl maxsm:text-4xl font-primary w-1/2 maxmd:w-[90%] ">
           <motion.h2
             initial={{ opacity: 0, scale: 1, y: -10 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -53,7 +46,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
               stiffness: 260,
               damping: 20,
             }}
-            className="font-primary leading-none mb-3"
+            className="leading-none mb-3"
           >
             <span className="text-accent dark:text-white font-black">
               {homeDic.imageHero.title}
@@ -72,7 +65,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
               stiffness: 260,
               damping: 20,
             }}
-            className="text-gray-300 font-secondary text-sm mb-8  maxmd:text-sm flex flex-col gap-3"
+            className="text-gray-300 font-secondary text-base mb-8  maxmd:text-sm flex flex-col gap-3"
           >
             <p className=" flex items-center gap-2">{homeDic.imageHero.text}</p>
           </motion.div>
@@ -97,6 +90,13 @@ const ImageHero = ({ homeDic, lang }: Props) => {
             </ButtonMotion>
           </div>
         </div>
+        {/* <div className="relative h-full w-1/2 maxmd:w-full">
+          <video width={1080} height={1080} autoPlay loop muted>
+            <source src={"/videos/xray_video_2.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+         
+        </div> */}
       </div>
       {/* bottom icons */}
       <div className="absolute -bottom-20 maxxlg:-bottom-32 maxlg:-bottom-20 left-1/2 transform -translate-x-1/2 z-20 w-full px-20 maxxlg:px-5">
@@ -138,7 +138,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
             className=" w-80 maxsm:w-28 flex flex-col items-center justify-start px-6 maxsm:px-1 py-4 border-r-2 border-primary"
           >
             <div className=" flex flex-col maxlg:items-center  items-center justify-start w-full">
-              <MdOutlineBiotech size={50} className="text-primary" />{" "}
+              <GiUltrasound size={50} className="text-primary" />{" "}
               <span className="text-lg leading-none  maxlg:text-sm text-center font-semibold">
                 {lang === "es"
                   ? "Equipos de Última Generación"

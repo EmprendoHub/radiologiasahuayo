@@ -132,6 +132,15 @@
         "btnText": "Reserva tu tomografía aquí",
         "btnPath": "/es/#contacto",
         "imgPath": "/images/slider3.webp"
+      },
+      {
+        "preTitle": "El mejor equipo",
+        "title": "Ultrasonido",
+        "titleTwo": " Avanzada para Diagnósticos Complejos",
+        "text": "Realiza tus estudios con equipos de ultrasonido avanzados. Precisión, rapidez y comodidad en un solo lugar para atender tus necesidades médicas.",
+        "btnText": "Reserva tu ultrasonido aquí",
+        "btnPath": "/es/#contacto",
+        "imgPath": "/images/slider4.webp"
       }
     ],
     "infiniteSlider": {

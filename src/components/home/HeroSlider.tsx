@@ -46,7 +46,7 @@ const HeroSlider = ({ homeDic }: { homeDic: { sliders: [] } }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className={`relative min-h-full w-full ${styles.textSlider}`}>
+      <div className={`relative min-h-[40vh] w-full ${styles.textSlider}`}>
         {homeDic.sliders.map((item: Item, idx: number) => (
           <div
             key={item.title}
@@ -57,7 +57,7 @@ const HeroSlider = ({ homeDic }: { homeDic: { sliders: [] } }) => {
             <div className="relative w-full h-full pr-10 maxmd:pr-0 overflow-x-hidden">
               {/* Text Column */}
               <div className="w-full h-full relative flex flex-col items-start ">
-                <h2 className="font-primary flex flex-col justify-start items-start text-5xl maxxlg:text-4xl maxmd:text-2xl gap-x-3">
+                <h2 className="font-primary flex flex-col justify-start items-start text-7xl maxxlg:text-6xl maxmd:text-5xl maxsm:text-4xl gap-x-3">
                   <motion.span
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -79,11 +79,14 @@ const HeroSlider = ({ homeDic }: { homeDic: { sliders: [] } }) => {
                   initial={{ x: -50, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
-                  className="text-sm font-secondary mt-2 text-white text-wrap"
+                  className="text-base font-secondary mt-2 text-white text-wrap"
                 >
                   {item.text}
                 </motion.p>
-                <Link href={item.btnPath} className="w-60 mb-20">
+                <Link
+                  href={item.btnPath}
+                  className="px-6 mt-5 border-white border rounded-sm"
+                >
                   <motion.button
                     initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
@@ -100,7 +103,7 @@ const HeroSlider = ({ homeDic }: { homeDic: { sliders: [] } }) => {
       </div>
       <div className="absolute inset-0 z-0">
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
 
         {/* Images Container */}
         <div className={`${styles.imageSlider} absolute inset-0`}>

@@ -42,7 +42,7 @@ const SingleSideToSide = ({
         <div className=" mx-auto m-8">
           <div className="flex maxmd:flex-wrap items-center justify-center">
             {/* Text */}
-            <div className="w-1/3 maxmd:w-full p-6 maxmd:px-0">
+            <div className="w-1/3 maxlg:w-1/2 maxmd:w-full p-6 maxmd:px-0">
               <motion.h2
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}

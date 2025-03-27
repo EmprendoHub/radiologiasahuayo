@@ -18,10 +18,10 @@ type CategoryProps = {
 
 const CategoriesComp = ({ categoryDic }: CategoryProps) => {
   return (
-    <div className="pt-20 pb-40 px-40 maxxlg:px-20 maxlg:px-10 maxmd:px-5 maxmd:pt-10 bg-muted">
+    <div className="pt-20 pb-40 px-40 maxxlg:px-20 maxlg:px-10 maxmd:px-5 maxmd:pt-10 bg-gray-200">
       <div className="mx-auto">
         <SectionTitle
-          className="text-4xl maxmd:text-3xl text-gray-800 dark:text-gray-300 font-primary leading-none mb-3 w-full text-center h-full px-20 maxsm:px-5"
+          className="text-5xl maxmd:text-4xl text-gray-800 dark:text-gray-300 font-primary leading-none mb-3 w-full text-center h-full px-20 maxsm:px-5"
           title={categoryDic.title}
           titleTwo={categoryDic.titleTwo}
           subtitle={categoryDic.text}

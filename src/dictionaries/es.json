@@ -4,7 +4,7 @@
       { "title": "Inicio", "url": "/" },
       { "title": "Quienes somos", "url": "/#acerca" },
       { "title": "Estudios y servicios", "url": "/productos" },
-      { "title": "Alianzas convenios y seguros", "url": "/productos" },
+
       { "title": "Contacto", "url": "/#contacto" }
     ],
     "searchbar": "Buscar"
@@ -96,14 +96,15 @@
   },
   "homeDic": {
     "imageHero": {
-      "pretitle": "¡La calidad y durabilidad que tu negocio necesita!",
-      "title": "Diagnósticos Médicos ",
-      "titleTwo": "Precisos & Atención de Calidad",
-      "text": "En la Unidad de Diagnóstico Dr. Gerardo Amezcua ofrecemos estudios como Rayos X, Ultrasonido, Tomografías y más, con tecnología avanzada y resultados rápidos. Agenda tu cita hoy mismo y cuida tu salud con expertos.",
-      "btnText": "Imágenes de alta calidad",
-      "btnPath": "/about-us",
-      "btnTextTwo": "Explorar servicios",
-      "btnUrlTwo": "/about-us"
+      "pretitle": "¡La calidad y servicio que tu cuerpo necesita!",
+      "title": "Unidad de ",
+      "titleTwo": "Diagnóstico Radiológico ",
+      "text": "Precisos & Atención de Calidad. Contamos con servicios de:",
+      "bullets": ["- Rayos X", "- Ultrasonido", "- Tomografías y más…"],
+      "btnText": "Calle Hospital General #245, Sahuayo, Mich.",
+      "btnPath": "#contacto",
+      "btnTextTwo": "Citas al: 353 531 7465",
+      "btnUrlTwo": "tel:+523535317465"
     },
     "sliders": [
       {
@@ -411,9 +412,10 @@
       "title": "¿Preguntas?",
       "titleTwo": "",
       "subtitle": "Comunícate con uno de nuestros representantes para aclarar tus dudas.",
-      "location": "Ubicación",
+      "location": "Calle Hospital General #245, Sahuayo Mich",
+      "phone": "+52 353 531 7465",
       "social": "Redes Sociales",
-      "questions": "Preguntas Generales",
+      "questions": "Ponte en contacto por email",
       "mapUrl": "https://maps.app.goo.gl/NyDTDXZcRHdmFnpM7"
     },
     "address": {
@@ -425,14 +427,14 @@
       "state": "Michoacan",
       "zip": "59010",
       "country": "Mexico",
-      "phone": "+1 206 979 9807",
+      "phone": "+1 353 184 7773",
       "mapImage": "/images/Colima61_.webp",
       "mapUrl": "https://maps.app.goo.gl/c5twJrvpb3KpXMhH8"
     },
     "addressTwo": {
       "ubicacion": "Sahuayo",
-      "addressOne": "",
-      "addressTwo": "Suite D3",
+      "addressOne": "Calle Hospital General #245",
+      "addressTwo": "",
       "city": "Sahuayo",
       "hood": "",
       "state": "Michoacan",

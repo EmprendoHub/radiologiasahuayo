@@ -14,8 +14,10 @@ type Props = {
       title: string;
       titleTwo: string;
       text: string;
+      bullets: string[];
       btnText: string;
       btnTextTwo: string;
+      btnUrlTwo: string;
     };
   };
   lang: string;
@@ -26,7 +28,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
     <div className=" relative">
       <div className="w-full bg-light-gradient h-[700px] maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
         {/* overlay */}
-        <div className="absolute bg-black bg-opacity-40 w-full h-full z-20 " />
+        <div className="absolute bg-black bg-opacity-40 maxmd:bg-opacity-60 w-full h-full z-20 " />
         <Image
           src={coverImage}
           width={1920}
@@ -36,7 +38,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
           alt="portfolio image"
           className="w-auto h-full absolute top-0 right-0 z-10"
         />
-        <div className=" pl-10 z-20 text-white text-6xl maxlg:text-5xl maxsm:text-4xl font-primary w-1/2 maxmd:w-[90%] ">
+        <div className=" pl-40 maxlg:pl-20 maxmd:pl-5 z-20 text-white text-6xl maxlg:text-5xl maxsm:text-4xl font-primary w-3/4 maxmd:w-[90%] ">
           <motion.h2
             initial={{ opacity: 0, scale: 1, y: -10 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -68,19 +70,15 @@ const ImageHero = ({ homeDic, lang }: Props) => {
             className="text-gray-300 font-secondary text-base mb-8  maxmd:text-sm flex flex-col gap-3"
           >
             <p className=" flex items-center gap-2">{homeDic.imageHero.text}</p>
+            {homeDic.imageHero.bullets.map((bullet, i) => (
+              <p key={i} className=" flex items-center gap-2">
+                {bullet}
+              </p>
+            ))}
           </motion.div>
           <div className="flex maxsm:flex-col maxsm:items-start items-center justify-start gap-5">
             <ButtonMotion
-              href=""
-              aria-label="Contactar"
-              textClass={"text-white"}
-              textClassTwo={"text-white"}
-              className="bg-secondary-gradient dark:bg-dark-gradient px-5 py-3 text-white flex items-center justify-center  text-xs tracking-widest"
-            >
-              {homeDic.imageHero.btnText}
-            </ButtonMotion>
-            <ButtonMotion
-              href=""
+              href={homeDic.imageHero.btnUrlTwo}
               aria-label="Contactar"
               textClass={"text-white"}
               textClassTwo={"text-white"}
@@ -89,6 +87,9 @@ const ImageHero = ({ homeDic, lang }: Props) => {
               {homeDic.imageHero.btnTextTwo}
             </ButtonMotion>
           </div>
+          <p className="text-sm mt-2 font-secondary">
+            {homeDic.imageHero.btnText}
+          </p>
         </div>
         {/* <div className="relative h-full w-1/2 maxmd:w-full">
           <video width={1080} height={1080} autoPlay loop muted>

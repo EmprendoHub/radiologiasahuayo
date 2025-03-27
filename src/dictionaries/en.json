@@ -4,7 +4,6 @@
       { "title": "Home", "url": "/" },
       { "title": "Who are we", "url": "/#acerca" },
       { "title": "Studies and services", "url": "/productos" },
-      { "title": "Alliances, agreements and insurance", "url": "/productos" },
       { "title": "Contact", "url": "/#contacto" }
     ],
     "searchbar": "Buscar"
@@ -96,14 +95,15 @@
   },
   "homeDic": {
     "imageHero": {
-      "pretitle": "The quality and performance your engine deserves!",
-      "title": "Accurate Medical ",
-      "titleTwo": "Diagnostics & Quality Care",
-      "text": "At the Dr. Gerardo Amezcua Diagnostic Unit we offer studies such as X-rays, ultrasound, CT scans and more, with advanced technology and fast results. Schedule your appointment today and take care of your health with experts.",
-      "btnText": "High quality imaging",
-      "btnPath": "/about-us",
-      "btnTextTwo": "Explore services",
-      "btnUrlTwo": "/about-us"
+      "pretitle": "The quality and service your body needs!",
+      "title": "Radiological",
+      "titleTwo": " Diagnostic Unit",
+      "text": "Accurate Results & Quality Care. We offer services such as:",
+      "bullets": ["- X-Rays", "- Ultrasound", "- CT Scans and more…"],
+      "btnText": "Calle Hospital General #245, Sahuayo, Mich.",
+      "btnPath": "#contacto",
+      "btnTextTwo": "For appointments: 353 531 7465",
+      "btnUrlTwo": "tel:+523535317465"
     },
     "sliders": [
       {
@@ -159,7 +159,7 @@
     },
     "doublesides": {
       "boxOne": {
-        "preTitle": "YOUR TRUSTED OIL PARTNER",
+        "preTitle": "YOUR TRUSTED PARTNER",
         "title": "Committed to Your ",
         "titleTwo": "Health and Wellbeing",
         "subtitle": "Your engine deserves the best care.",
@@ -412,9 +412,10 @@
       "title": "",
       "titleTwo": "get in touch.",
       "subtitle": "Let us discover how we can help improve your trade experience.",
-      "location": "Location",
+      "location": "Calle Hospital General #245, Sahuayo Mich",
+      "phone": "+52 353 531 7465",
       "social": "Social Media",
-      "questions": "General Questions",
+      "questions": "Get in touch by email",
       "mapUrl": "https://maps.app.goo.gl/NyDTDXZcRHdmFnpM7"
     },
     "address": {
@@ -432,8 +433,8 @@
     },
     "addressTwo": {
       "ubicacion": "Sahuayo",
-      "addressOne": "",
-      "addressTwo": "Suite D3",
+      "addressOne": "Calle Hospital General #245",
+      "addressTwo": "",
       "city": "Sahuayo",
       "hood": "",
       "state": "Michoacan",

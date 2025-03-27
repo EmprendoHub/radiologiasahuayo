@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
 import styles from "./layout.module.css";
 import { ContactDicProp, HomeDicProps } from "@/types/dictionaries";
 
@@ -30,6 +30,11 @@ const ContactComponent = ({
           <p className="text-center font-secondary italic maxlg:text-sm">
             {contactDic.contactInfo.subtitle}
           </p>
+          <p className="text-center text-4xl mt-4 text-primary font-primary">
+            <Link href={"tel:+523535317465"}>
+              {contactDic.contactInfo.phone}
+            </Link>
+          </p>
         </div>
 
         {/* Info */}
@@ -47,7 +52,7 @@ const ContactComponent = ({
                   aria-label="Facebook"
                   target="_blank"
                   href={
-                    "https://www.facebook.com/profile.php?id=61553059803842"
+                    "https://www.facebook.com/p/Unidad-de-Diagnostico-Dr-Gerardo-Amezcua-61553059803842/"
                   }
                   className="relative flex items-center justify-center group"
                 >
@@ -71,37 +76,9 @@ const ContactComponent = ({
                       />
                     </g>
                   </svg>
-                  <FaFacebookF className="absolute text-xs group-hover:text-secondary ease-in-out duration-700 z-0" />
+                  <FaFacebookF className="absolute text-base group-hover:text-secondary ease-in-out duration-700 z-0" />
                 </Link>
-                {/* Instagram */}
-                <Link
-                  aria-label="Instagram"
-                  target="_blank"
-                  href={"https://www.instagram.com/radiologiasahuayo/"}
-                  className="relative flex items-center justify-center group"
-                >
-                  <svg className={`${styles.circle}`}>
-                    <g>
-                      <ellipse
-                        className={`${styles.background}`}
-                        ry="20"
-                        rx="20"
-                        cy="30"
-                        cx="30"
-                        strokeWidth="2"
-                      />
-                      <ellipse
-                        className={`${styles.foreground}`}
-                        ry="20"
-                        rx="20"
-                        cy="30"
-                        cx="30"
-                        strokeWidth="2"
-                      />
-                    </g>
-                  </svg>
-                  <FaInstagram className="absolute text-xs group-hover:text-secondary ease-in-out duration-700 z-0" />
-                </Link>
+
                 {/* WhatsApp */}
                 <Link
                   aria-label="WhatsApp"
@@ -129,10 +106,12 @@ const ContactComponent = ({
                       />
                     </g>
                   </svg>
-                  <FaWhatsapp className="absolute text-xs group-hover:text-dark ease-in-out duration-700 z-0" />
+                  <FaWhatsapp className="absolute text-base group-hover:text-dark ease-in-out duration-700 z-0" />
                 </Link>
               </div>
             </div>
+            {/* Email */}
+
             <div className="w-full ">
               <p className="text-[12px] text-center uppercase font-secondary text-gray-500">
                 {contactDic.contactInfo.questions}
@@ -143,8 +122,22 @@ const ContactComponent = ({
                 </p>
               </Link>
             </div>
+            {/* Map */}
+
+            <div className="w-full pb-10 pl-5 maxmd:pl-1  flex flex-col justify-start items-start">
+              <div className="w-[100%] px-3map-class pt-5">
+                <iframe
+                  className="border-none  "
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.2421428204434!2d-102.72074828889843!3d20.040297881295448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842efd2cfec53ae7%3A0x70be1209747948fe!2sUnidad%20de%20Diagnostico%20Radiologico!5e0!3m2!1ses-419!2smx!4v1743078140461!5m2!1ses-419!2smx"
+                  width="100%"
+                  height="450"
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
           </div>
-          {/* Email */}
         </div>
       </div>
     </div>

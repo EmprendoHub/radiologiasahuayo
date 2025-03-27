@@ -9,6 +9,7 @@ export type ContactDicProp = {
     titleTwo: string;
     subtitle: string;
     social: string;
+    phone: string;
     questions: string;
   };
 };

@@ -18,8 +18,6 @@ const myFont = localFont({
   variable: "--font-square-bold",
 });
 
-console.log("myFont", myFont);
-
 export const metadata: Metadata = {
   title: "Radiología Sahuayo",
   description: "Mejor calidad por el mejor precio",

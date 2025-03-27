@@ -5,6 +5,7 @@ import CategoriesComp from "@/components/home/CategoriesComp";
 import HeroSlider from "@/components/home/HeroSlider";
 import SingleSideToSide from "@/components/home/SingleSideToSide";
 import ContactInner from "@/components/home/ContactInner";
+import Marquee from "@/components/marquees/Marquee";
 
 export default async function Home({
   params,
@@ -19,6 +20,7 @@ export default async function Home({
   return (
     <div className="overflow-x-hidden">
       <ImageHero homeDic={homeDic} lang={lang} />
+      <Marquee />
       <DoubleSideToSide homeDic={homeDic} lang={lang} />
       <CategoriesComp categoryDic={categoryDic} />
       <HeroSlider homeDic={homeDic} />

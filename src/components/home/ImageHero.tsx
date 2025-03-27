@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import coverImage from "../../../public/images/xray-scaled.jpg";
+// import coverImage from "../../../public/images/xray-scaled.jpg";
 // import Image from "next/image";
 import { GiDiscussion, GiUltrasound } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { ButtonMotion } from "../motion/ButtonMotion";
 import { FaDiagnoses, FaXRay } from "react-icons/fa";
-import Image from "next/image";
+// import Image from "next/image";
 
 type Props = {
   homeDic: {
@@ -29,7 +29,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
       <div className="w-full bg-light-gradient h-[700px] maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
         {/* overlay */}
         <div className="absolute bg-black bg-opacity-40 maxmd:bg-opacity-60 w-full h-full z-20 " />
-        <Image
+        {/* <Image
           src={coverImage}
           width={1920}
           height={1080}
@@ -37,7 +37,20 @@ const ImageHero = ({ homeDic, lang }: Props) => {
           loading="eager"
           alt="portfolio image"
           className="w-auto h-full absolute top-0 right-0 z-10"
-        />
+        /> */}
+        <div className="w-[60%] h-full absolute bottom-0 right-0 z-10">
+          <video
+            width={1080}
+            height={1080}
+            autoPlay
+            loop
+            muted
+            className="w-full h-full object-cover object-left"
+          >
+            <source src={"/videos/scan_body_small.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className=" pl-40 maxlg:pl-20 maxmd:pl-5 z-20 text-white text-6xl maxlg:text-5xl maxsm:text-4xl font-primary w-3/4 maxmd:w-[90%] ">
           <motion.h2
             initial={{ opacity: 0, scale: 1, y: -10 }}
@@ -91,13 +104,6 @@ const ImageHero = ({ homeDic, lang }: Props) => {
             {homeDic.imageHero.btnText}
           </p>
         </div>
-        {/* <div className="relative h-full w-1/2 maxmd:w-full">
-          <video width={1080} height={1080} autoPlay loop muted>
-            <source src={"/videos/xray_video_2.mp4"} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-         
-        </div> */}
       </div>
       {/* bottom icons */}
       <div className="absolute -bottom-20 maxxlg:-bottom-32 maxlg:-bottom-20 left-1/2 transform -translate-x-1/2 z-20 w-full px-20 maxxlg:px-5">

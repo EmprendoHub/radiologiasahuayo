@@ -47,17 +47,19 @@ const DoubleSideToSide = ({
             {/* text */}
             <div className="relative maxmd:ml-5 w-6/12 pr-20 maxmd:w-full">
               <motion.h2
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.7,
-                  type: "tween",
-                  stiffness: 260,
-                  damping: 20,
-                }}
+                initial={{ x: -180, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.2 }}
                 className="text-5xl maxmd:text-3xl text-gray-800 dark:text-gray-300 font-primary leading-none mb-3 w-[90%] h-full"
               >
                 <span>{homeDic.doublesides.boxTwo.title} </span>
+              </motion.h2>
+              <motion.h2
+                initial={{ x: -180, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.6 }}
+                className="text-5xl maxmd:text-3xl text-gray-800 dark:text-gray-300 font-primary leading-none mb-3 w-[90%] h-full"
+              >
                 <span className="text-primary">
                   {homeDic.doublesides.boxTwo.titleTwo}
                 </span>

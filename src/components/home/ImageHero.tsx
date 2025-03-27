@@ -26,7 +26,7 @@ type Props = {
 const ImageHero = ({ homeDic, lang }: Props) => {
   return (
     <div className=" relative">
-      <div className="w-full bg-light-gradient h-[700px] maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
+      <div className="w-full bg-light-gradient h-[700px]  maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
         {/* overlay */}
         <div className="absolute bg-black bg-opacity-40 maxmd:bg-opacity-60 w-full h-full z-20 " />
         {/* <Image

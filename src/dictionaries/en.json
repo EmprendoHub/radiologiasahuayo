@@ -3,7 +3,7 @@
     "menu": [
       { "title": "Home", "url": "/" },
       { "title": "Who are we", "url": "/#acerca" },
-      { "title": "Studies and services", "url": "/productos" },
+      { "title": "Studies and services", "url": "/#servicios" },
       { "title": "Contact", "url": "/#contacto" }
     ],
     "searchbar": "Buscar"
@@ -290,37 +290,49 @@
     "categories": [
       {
         "title": "Ultrasound",
-        "catPath": "/en/productos?category=Ultrasound",
-        "text": "Detailed scans with fast and reliable results.",
+        "catPath": "/es/productos?category=Ultrasonido",
+        "text": "Detailed examinations with fast and reliable results.",
         "imgPath": "/images/ultrasonido_sahuayo.webp"
       },
       {
-        "title": "X Rays",
-        "catPath": "/en/productos?category=ATF-XRays",
-        "text": "High quality images for accurate diagnosis.",
+        "title": "X-Rays",
+        "catPath": "/es/productos?category=ATF-RayosX",
+        "text": "High-quality images for an accurate diagnosis.",
         "imgPath": "/images/rayos_x_sahuayo.webp"
       },
       {
-        "title": "Tomography",
-        "catPath": "/en/productos?category=Tomography",
+        "title": "CT Scan",
+        "catPath": "/es/productos?category=Tomografia",
         "text": "Advanced studies for a comprehensive evaluation.",
         "imgPath": "/images/tomografia_sahuayo.webp"
       },
       {
         "title": "Mammography",
-        "catPath": "/en/productos?category=Mammography",
+        "catPath": "/es/productos?category=Mamografía",
         "text": "Prevention and early diagnosis of breast diseases.",
         "imgPath": "/images/mamografia_sahuayo.webp"
       },
       {
+        "title": "Contrast Studies",
+        "catPath": "/es/productos?category=Electrocardiograma",
+        "text": "Heart monitoring with reliable technology.",
+        "imgPath": "/images/estudio-contraste.jpg"
+      },
+      {
+        "title": "Laboratories",
+        "catPath": "/es/productos?category=Electrocardiograma",
+        "text": "Heart monitoring with reliable technology.",
+        "imgPath": "/images/lab.jpg"
+      },
+      {
         "title": "Electrocardiogram",
-        "catPath": "/en/productos?category=Electrocardiogram",
+        "catPath": "/es/productos?category=Electrocardiograma",
         "text": "Heart monitoring with reliable technology.",
         "imgPath": "/images/electrocardiograma_sahuayo.webp"
       },
       {
-        "title": "Checkup Packages",
-        "catPath": "/en/productos?category=Paquetes",
+        "title": "Intervention Studies",
+        "catPath": "/es/productos?category=Paquetes",
         "text": "Comprehensive plans for your health care.",
         "imgPath": "/images/paquetes_medicos_sahuayo.webp"
       }

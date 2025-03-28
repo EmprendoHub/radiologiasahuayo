@@ -13,7 +13,10 @@ const DoubleSideToSide = ({
   lang: string;
 }) => {
   return (
-    <div className="w-full min-h-full bg-white dark:bg-primary  pb-40">
+    <div
+      className="w-full min-h-full bg-white dark:bg-primary  pb-40"
+      id="acerca"
+    >
       <div className="h-full py-8">
         {/* Top Side */}
         <div className="h-full max-w-5xl mx-auto m-8">

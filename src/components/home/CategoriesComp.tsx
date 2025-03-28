@@ -2,7 +2,7 @@
 
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import "./categories.css";
@@ -18,7 +18,10 @@ type CategoryProps = {
 
 const CategoriesComp = ({ categoryDic }: CategoryProps) => {
   return (
-    <div className="pt-20 pb-40 px-40 maxxlg:px-20 maxlg:px-10 maxmd:px-5 maxmd:pt-10 bg-gray-200">
+    <div
+      className="pt-20 pb-40 px-40 maxxlg:px-20 maxlg:px-10 maxmd:px-5 maxmd:pt-10 bg-gray-200"
+      id="servicios"
+    >
       <div className="mx-auto">
         <SectionTitle
           className="text-5xl maxmd:text-4xl text-gray-800 dark:text-gray-300 font-primary leading-none mb-3 w-full text-center h-full px-20 maxsm:px-5"
@@ -29,9 +32,8 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
       </div>
       <div className="relative flex flex-wrap maxsm:flex-col items-center justify-center gap-5 w-full ">
         {categoryDic.categories.map((category, index) => (
-          <Link
+          <div
             key={category.title}
-            href={`${category.catPath}`}
             className="w-auto cursor-pointer hover:scale-[105%] duration-300 ease-in-out"
           >
             <motion.div
@@ -61,7 +63,7 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
               {/* Octagonal overlay */}
               <div className="octagon-overlay absolute z-[2] top-0 left-0 w-full h-full" />
             </motion.div>
-          </Link>
+          </div>
         ))}
       </div>
     </div>

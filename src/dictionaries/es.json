@@ -3,8 +3,7 @@
     "menu": [
       { "title": "Inicio", "url": "/" },
       { "title": "Quienes somos", "url": "/#acerca" },
-      { "title": "Estudios y servicios", "url": "/productos" },
-
+      { "title": "Estudios y servicios", "url": "/#servicios" },
       { "title": "Contacto", "url": "/#contacto" }
     ],
     "searchbar": "Buscar"
@@ -314,13 +313,25 @@
         "imgPath": "/images/mamografia_sahuayo.webp"
       },
       {
+        "title": "Estudios Contrastado",
+        "catPath": "/es/productos?category=Electrocardiograma",
+        "text": "Monitoreo del corazón con tecnología confiable.",
+        "imgPath": "/images/estudio-contraste.jpg"
+      },
+      {
+        "title": "Laboratorios",
+        "catPath": "/es/productos?category=Electrocardiograma",
+        "text": "Monitoreo del corazón con tecnología confiable.",
+        "imgPath": "/images/lab.jpg"
+      },
+      {
         "title": "Electrocardiograma",
         "catPath": "/es/productos?category=Electrocardiograma",
         "text": "Monitoreo del corazón con tecnología confiable.",
         "imgPath": "/images/electrocardiograma_sahuayo.webp"
       },
       {
-        "title": "Paquetes de Checkups",
+        "title": "Estudios  de Intervención",
         "catPath": "/es/productos?category=Paquetes",
         "text": "Planes completos para el cuidado de tu salud.",
         "imgPath": "/images/paquetes_medicos_sahuayo.webp"

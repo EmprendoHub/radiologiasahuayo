@@ -39,20 +39,20 @@
     "widgettwo": {
       "title": "Services",
       "links": [
-        { "title": "Ultrasound", "url": "/productos?category=Additives" },
-        { "title": "X Rays", "url": "/productos?category=ATF-DEXRON" },
+        { "title": "Ultrasound", "url": "/#servicios" },
+        { "title": "X Rays", "url": "/#servicios" },
         {
           "title": "Tomography",
-          "url": "/productos?category=Hydraulics"
+          "url": "/#servicios"
         },
-        { "title": "Mammography", "url": "/productos?category=Motorcycles" },
+        { "title": "Mammography", "url": "/#servicios" },
         {
           "title": "Electrocardiogram",
-          "url": "/productos?category=Racing"
+          "url": "/#servicios"
         },
         {
           "title": "Checkup Packages",
-          "url": "/productos?category=RRCCA"
+          "url": "/#servicios"
         }
       ]
     },
@@ -60,10 +60,10 @@
       "title": "Site",
       "links": [
         { "title": "Home", "url": "/" },
-        { "title": "Who are we", "url": "/productos" },
-        { "title": "Studies and services", "url": "/#contacto" },
-        { "title": "Alliances, agreements and insurance", "url": "/acerca" },
-        { "title": "Contact", "url": "/acerca" }
+        { "title": "Who are we", "url": "/#acerca" },
+        { "title": "Studies and services", "url": "/#servicios" },
+        { "title": "Alliances, agreements and insurance", "url": "/#alianza" },
+        { "title": "Contact", "url": "/#contacto" }
       ]
     },
     "widgetfour": {

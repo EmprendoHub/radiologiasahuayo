@@ -19,7 +19,7 @@ const Marquee = () => {
   ];
 
   return (
-    <div className="overflow-hidden mt-20">
+    <div className="overflow-hidden mt-20" id="alianza">
       <motion.h2
         initial={{ x: -180, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

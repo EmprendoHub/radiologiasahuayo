@@ -39,20 +39,20 @@
     "widgettwo": {
       "title": "Servicios",
       "links": [
-        { "title": "Ultrasonido", "url": "/productos?category=Additives" },
-        { "title": "Rayos X", "url": "/productos?category=ATF-DEXRON" },
+        { "title": "Ultrasonido", "url": "/#servicios" },
+        { "title": "Rayos X", "url": "/#servicios" },
         {
           "title": "Tomografía",
-          "url": "/productos?category=Hidráulicos"
+          "url": "/#servicios"
         },
-        { "title": "Mamografía", "url": "/productos?category=Motocicletas" },
+        { "title": "Mamografía", "url": "/#servicios" },
         {
           "title": "Electrocardiograma",
-          "url": "/productos?category=Carreras"
+          "url": "/#servicios"
         },
         {
           "title": "Paquetes de Checkups",
-          "url": "/productos?category=RRCCA"
+          "url": "/#servicios"
         }
       ]
     },
@@ -60,10 +60,10 @@
       "title": "Sitio",
       "links": [
         { "title": "Inicio", "url": "/" },
-        { "title": "Quienes somos", "url": "/productos" },
-        { "title": "Estudios y servicios", "url": "/#contacto" },
-        { "title": "Alianzas convenios y seguros", "url": "/acerca" },
-        { "title": "Contacto", "url": "/acerca" }
+        { "title": "Quienes somos", "url": "/#acerca" },
+        { "title": "Estudios y servicios", "url": "/#servicios" },
+        { "title": "Alianzas convenios y seguros", "url": "/#alianza" },
+        { "title": "Contacto", "url": "/#contacto" }
       ]
     },
     "widgetfour": {

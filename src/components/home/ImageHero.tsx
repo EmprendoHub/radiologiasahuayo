@@ -38,14 +38,14 @@ const ImageHero = ({ homeDic, lang }: Props) => {
           alt="portfolio image"
           className="w-auto h-full absolute top-0 right-0 z-10"
         /> */}
-        <div className="w-[60%] h-full absolute bottom-0 right-0 z-10">
+        <div className="w-[60%] maxmd:w-full h-full absolute bottom-0 right-0 z-10">
           <video
             width={1080}
             height={1080}
             autoPlay
             loop
             muted
-            className="w-full h-full object-cover object-left"
+            className="w-full h-full object-cover object-left maxmd:object-center"
           >
             <source src={"/videos/scan_body_small.mp4"} type="video/mp4" />
             Your browser does not support the video tag.

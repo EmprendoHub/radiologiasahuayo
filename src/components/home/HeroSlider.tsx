@@ -91,7 +91,7 @@ const HeroSlider = ({ homeDic }: { homeDic: { sliders: [] } }) => {
                     initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
-                    className="text-sm font-secondary my-4 gap-x-2 flex items-center text-white text-wrap"
+                    className="text-base font-secondary my-4 gap-x-2 flex items-center text-white text-wrap"
                   >
                     {item.btnText} <FaArrowRightLong />
                   </motion.button>

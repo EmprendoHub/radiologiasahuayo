@@ -16,7 +16,7 @@ const ContactComponent = ({
       {/* Title */}
       <div className="w-full flex flex-col h-full gap-x-5 maxmd:flex-col justify-center items-center mb-2">
         <div className="w-1/2 maxmd:w-full  maxmd:px-1 maxmd:mt-10  ">
-          <p className="uppercase font-secondary tracking-widest text-sm text-gray-500 text-center">
+          <p className="uppercase font-secondary tracking-widest text-base text-gray-500 text-center">
             {contactDic.contactInfo.pretitle}
           </p>
           <h2 className="text-3xl text-gray-800 dark:text-gray-300 font-primary leading-none mb-3 text-center">
@@ -27,7 +27,7 @@ const ContactComponent = ({
             <span>{contactDic.contactInfo.title} </span>
             <span className="text-dark">{contactDic.contactInfo.titleTwo}</span>
           </p>
-          <p className="text-center font-secondary italic maxlg:text-sm">
+          <p className="text-center font-secondary italic maxlg:text-base">
             {contactDic.contactInfo.subtitle}
           </p>
           <p className="text-center text-4xl mt-4 text-primary font-primary">

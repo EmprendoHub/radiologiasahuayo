@@ -30,7 +30,7 @@ const FooterBar = ({
   };
 }) => {
   return (
-    <div className="relative w-full flex flex-col items-center justify-center pb-4 px-20 maxmd:px-5 maxsm:px-1 text-[12px] maxsm:text-[10px] text-center">
+    <div className="relative w-full flex flex-col items-center justify-center pb-4 px-20 maxmd:px-5 maxsm:px-1 text-sm maxsm:text-[10px] text-center">
       {/* <DarkLightLogo lang={lang} /> */}
       <p className="mt-3">
         {localeFooter.footerBar.copyright.pretitle} &copy;{" "}

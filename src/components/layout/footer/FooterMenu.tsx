@@ -29,7 +29,7 @@ const FooterMenu = ({
       className={`relative overflow-x-hidden w-full flex flex-col items-center justify-start `}
     >
       <div className="flex maxsm:flex-col items-start justify-between gap-4 w-full px-3">
-        <div className="font-secondary text-xs">
+        <div className="font-secondary text-base">
           <WhiteLogoH className="w-[300px]" />
           <p className=" mt-0">{localeFooter.addressTwo.ubicacion}</p>
           <p className="">
@@ -42,7 +42,7 @@ const FooterMenu = ({
         </div>
         <div>
           <p className="text-lg font-primary">{localeFooter.widgettwo.title}</p>
-          <ul className="text-xs font-secondary  mt-2 flex flex-col gap-y-2">
+          <ul className="text-base font-secondary  mt-2 flex flex-col gap-y-2">
             {localeFooter.widgettwo.links.map((link) => (
               <motion.li
                 key={link.title}
@@ -60,7 +60,7 @@ const FooterMenu = ({
           <p className="text-lg font-primary">
             {localeFooter.widgetthree.title}
           </p>
-          <ul className="font-secondary text-xs mt-2 flex flex-col gap-y-2">
+          <ul className="font-secondary text-base mt-2 flex flex-col gap-y-2">
             {localeFooter.widgetthree.links.map((link) => (
               <motion.li
                 key={link.title}
@@ -79,7 +79,7 @@ const FooterMenu = ({
             {" "}
             {localeFooter.widgetfour.title}
           </p>
-          <ul className="font-secondary text-xs mt-2 flex flex-col gap-y-2">
+          <ul className="font-secondary text-base mt-2 flex flex-col gap-y-2">
             {localeFooter.widgetfour.links.map((link) => (
               <motion.li
                 key={link.title}

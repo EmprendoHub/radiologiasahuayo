@@ -30,8 +30,8 @@ const FooterMenu = ({
     >
       <div className="flex maxsm:flex-col items-start justify-between gap-4 w-full px-3">
         <div className="font-secondary text-xs">
-          <WhiteLogoH />
-          <p className=" mt-2">{localeFooter.addressTwo.ubicacion}</p>
+          <WhiteLogoH className="w-[300px]" />
+          <p className=" mt-0">{localeFooter.addressTwo.ubicacion}</p>
           <p className="">
             {localeFooter.addressTwo.city} {localeFooter.addressTwo.hood}
           </p>

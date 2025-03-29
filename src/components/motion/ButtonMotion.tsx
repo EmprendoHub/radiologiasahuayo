@@ -30,7 +30,7 @@ const firstTextVariant = {
     y: 0,
   },
   hover: {
-    y: -20,
+    y: -25,
     transition: {
       duration: 1.125,
       ease: [0.19, 1, 0.22, 1],
@@ -47,7 +47,7 @@ const firstTextVariant = {
 
 const secondTextVariant = {
   initial: {
-    y: 20,
+    y: 25,
   },
   hover: {
     y: 0,
@@ -57,7 +57,7 @@ const secondTextVariant = {
     },
   },
   animate: {
-    y: 20,
+    y: 25,
     transition: {
       duration: 1.125,
       ease: [0.19, 1, 0.22, 1],

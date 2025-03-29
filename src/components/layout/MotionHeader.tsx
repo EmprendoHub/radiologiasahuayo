@@ -59,8 +59,8 @@ const MotionHeader = ({
           variants={{ hidden: { y: 0 }, visible: { y: "-110%" } }}
           animate={hidden ? "hidden" : "visible"}
           transition={{ duration: 0.35, ease: "easeInOut" }}
-          className={`print:hidden flex flex-row items-center justify-between  header-class text-white  text-xl fixed top-0 z-[9999]  w-full mx-auto py-3 pl-4 h-[90px] ${
-            !transparency ? "" : "bg-black bg-opacity-50"
+          className={`print:hidden flex flex-row items-center justify-between  header-class   text-xl fixed top-0 z-[9999]  w-full mx-auto py-3 pl-4 h-[130px] ${
+            !transparency ? "" : "bg-gray-300 bg-opacity-50"
           }`}
         >
           <Link aria-label="light-logo" href={`/${lang}/`}>
@@ -132,7 +132,7 @@ const MobileNavLink = ({
   return (
     <motion.div
       variants={mobileNavLinksVariants}
-      className="tracking-wide text-base "
+      className="tracking-wide text-2xl "
     >
       <Link
         href={`/${lang}${href}`}

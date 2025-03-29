@@ -1,6 +1,6 @@
 import { getDictionary } from "@/lib/dictionary.mjs";
 import ImageHero from "@/components/home/ImageHero";
-import DoubleSideToSide from "@/components/home/DoubleSideToSide";
+// import DoubleSideToSide from "@/components/home/DoubleSideToSide";
 import CategoriesComp from "@/components/home/CategoriesComp";
 import HeroSlider from "@/components/home/HeroSlider";
 import SingleSideToSide from "@/components/home/SingleSideToSide";
@@ -21,7 +21,7 @@ export default async function Home({
     <div className="overflow-x-hidden">
       <ImageHero homeDic={homeDic} lang={lang} />
       <Marquee />
-      <DoubleSideToSide homeDic={homeDic} lang={lang} />
+      {/* <DoubleSideToSide homeDic={homeDic} lang={lang} /> */}
       <CategoriesComp categoryDic={categoryDic} />
       <HeroSlider homeDic={homeDic} />
       <SingleSideToSide flipBoxes={flipBoxes} homeDic={homeDic} />

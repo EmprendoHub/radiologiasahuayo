@@ -13,45 +13,28 @@ const MarqueeItem = ({
   to: string;
 }) => {
   return (
-    <div className="flex py-2">
+    <div className="flex overflow-hidden w-full">
       <motion.div
-        initial={{ x: `${from}` }}
-        animate={{ x: `${to}` }}
-        transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-        className="flex flex-shrink-0"
+        initial={{ x: from }}
+        animate={{ x: to }}
+        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+        className="flex items-center gap-10 min-w-[200%]" // Ensures seamless wrapping
       >
-        {images.map((image, index) => {
-          return (
+        {[...images, ...images].map(
+          (
+            image,
+            index // Duplicate array for looping effect
+          ) => (
             <Image
               alt=""
-              width={500}
-              height={500}
-              className="h-12 w-auto pr-20"
+              width={150} // Adjust width for better fit
+              height={75} // Adjust height for consistency
+              className="h-16 w-auto object-contain"
               src={image}
               key={index}
             />
-          );
-        })}
-      </motion.div>
-
-      <motion.div
-        initial={{ x: `${from}` }}
-        animate={{ x: `${to}` }}
-        transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-        className="flex flex-shrink-0"
-      >
-        {images.map((image, index) => {
-          return (
-            <Image
-              alt=""
-              width={500}
-              height={500}
-              className="h-12 w-auto pr-20"
-              src={image}
-              key={index}
-            />
-          );
-        })}
+          )
+        )}
       </motion.div>
     </div>
   );

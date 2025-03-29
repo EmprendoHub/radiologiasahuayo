@@ -5,11 +5,11 @@ const WhiteLogoH = ({ className }: { className?: string }) => {
     <div className={`relative flex ${className}`}>
       <Image
         alt="image"
-        src={"/logos/white_logo_horizontal.webp"}
-        width={350}
-        height={350}
+        src={"/logos/dark_logo_horizontal.svg"}
+        width={550}
+        height={550}
         priority
-        className={`overflow-hidden transition-all  ease-in-out w-[350px] py-2 h-auto`}
+        className={`overflow-hidden transition-all  ease-in-out w-[650px] py-2 h-auto`}
       />
     </div>
   );

@@ -118,25 +118,25 @@ const ContactComponent = ({
               </p>
               <Link href={"mailto:radiologiasahuayo@gmail.com"}>
                 <p className="text-center text-3xl text-primary hover:text-secondary ease-in-out duration-700">
-                  radiologiasahuayo@gmail.com
+                  contacto@radiologiasahuayo.com
                 </p>
               </Link>
             </div>
-            {/* Map */}
+          </div>
+        </div>
+        {/* Map */}
 
-            <div className="w-full pb-10 pl-5 maxmd:pl-1  flex flex-col justify-start items-start">
-              <div className="w-[100%] px-3map-class pt-5">
-                <iframe
-                  className="border-none  "
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.2421428204434!2d-102.72074828889843!3d20.040297881295448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842efd2cfec53ae7%3A0x70be1209747948fe!2sUnidad%20de%20Diagnostico%20Radiologico!5e0!3m2!1ses-419!2smx!4v1743078140461!5m2!1ses-419!2smx"
-                  width="100%"
-                  height="450"
-                  allowFullScreen={false}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
+        <div className="w-full pb-10 pl-5 maxmd:pl-1  flex flex-col justify-start items-start">
+          <div className="w-[100%] px-3map-class pt-5">
+            <iframe
+              className="border-none  "
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.2421428204434!2d-102.72074828889843!3d20.040297881295448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842efd2cfec53ae7%3A0x70be1209747948fe!2sUnidad%20de%20Diagnostico%20Radiologico!5e0!3m2!1ses-419!2smx!4v1743078140461!5m2!1ses-419!2smx"
+              width="100%"
+              height="450"
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>

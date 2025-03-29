@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import styles from "./_navbar.module.css";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
 import WhiteLogoH from "./WhiteLogo";
 
 const MobileMenu = ({
@@ -76,7 +76,7 @@ const MobileMenu = ({
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed flex items-center justify-center flex-col left-0 top-0 w-full min-h-screen bg-main-gradient dark:bg-dark px-10 pt-2 z-[50] origin-top"
+            className="fixed flex items-center justify-center flex-col left-0 top-0 w-full min-h-screen bg-white dark:bg-dark px-10 pt-2 z-[50] origin-top"
           >
             <p
               onClick={toggleMobileMenu}
@@ -141,35 +141,7 @@ const MobileMenu = ({
                   </svg>
                   <FaFacebookF className="absolute text-xs group-hover:text-secondary ease-in-out duration-700 z-0" />
                 </Link>
-                {/* LinkedIn */}
-                <Link
-                  aria-label="Instagram"
-                  target="_blank"
-                  href={"https://www.instagram.com/radiologiasahuayo/"}
-                  className="relative flex items-center justify-center group"
-                >
-                  <svg className={`${styles.circle}`}>
-                    <g>
-                      <ellipse
-                        className={`${styles.background}`}
-                        ry="20"
-                        rx="20"
-                        cy="30"
-                        cx="30"
-                        strokeWidth="2"
-                      />
-                      <ellipse
-                        className={`${styles.foreground}`}
-                        ry="20"
-                        rx="20"
-                        cy="30"
-                        cx="30"
-                        strokeWidth="2"
-                      />
-                    </g>
-                  </svg>
-                  <FaInstagram className="absolute text-xs group-hover:text-secondary ease-in-out duration-700 z-0" />
-                </Link>
+
                 {/* WhatsApp */}
                 <Link
                   aria-label="WhatsApp"
@@ -237,7 +209,10 @@ const MobileNavLink = ({
   toggleMobileMenu: () => void;
 }) => {
   return (
-    <motion.div variants={mobileNavLinksVariants} className="text-base  ">
+    <motion.div
+      variants={mobileNavLinksVariants}
+      className="text-2xl uppercase  "
+    >
       <Link
         href={href}
         onClick={toggleMobileMenu}

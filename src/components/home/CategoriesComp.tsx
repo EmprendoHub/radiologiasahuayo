@@ -30,11 +30,11 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
           subtitle={categoryDic.text}
         />
       </div>
-      <div className="relative flex flex-wrap maxsm:flex-col items-center justify-center gap-5 w-full ">
+      <div className="relative flex flex-wrap maxsm:flex-col items-center justify-center gap-10 w-full ">
         {categoryDic.categories.map((category, index) => (
           <div
             key={category.title}
-            className="w-auto cursor-pointer hover:scale-[105%] duration-300 ease-in-out"
+            className="w-auto cursor-pointer hover:scale-[105%] duration-300 ease-in-out mx-auto flex flex-col items-center justify-center gap-2"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0, y: 10 }}
@@ -48,7 +48,7 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
               }}
               className="octagon-container relative mx-auto items-center justify-center flex text-center h-[300px] w-[300px] maxxlg:h-[250px] maxxlg:w-[250px] maxlg:h-[250px] maxlg:w-[250px] maxmd:h-[250px] maxmd:w-[250px]"
             >
-              <div className="octagon relative overflow-hidden w-full h-[500px] maxxlg:h-[350px]">
+              <div className="octagon relative overflow-hidden w-full h-[400px] maxxlg:h-[250px]">
                 <Image
                   src={category.imgPath}
                   width={600}
@@ -57,12 +57,24 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="absolute z-50 text-white py-2 px-8 text-2xl top-[40%] font-primary tracking-wide">
-                {category.title}
-              </span>
+
               {/* Octagonal overlay */}
               <div className="octagon-overlay absolute z-[2] top-0 left-0 w-full h-full" />
             </motion.div>
+            <motion.span
+              initial={{ opacity: 0, scale: 0, y: 10 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                delay: index * 0.2, // Sequential delay
+                type: "tween",
+                stiffness: 260,
+                damping: 20,
+              }}
+              className=" text-4xl font-primary tracking-wide"
+            >
+              {category.title}
+            </motion.span>
           </div>
         ))}
       </div>

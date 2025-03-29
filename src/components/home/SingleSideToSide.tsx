@@ -56,7 +56,7 @@ const SingleSideToSide = ({
                   {homeDic.singlesides.boxOne.titleTwo}
                 </span>
               </motion.h2>
-              <div className="font-secondary text-base mb-3  maxmd:text-sm flex flex-col gap-3">
+              <div className="font-secondary text-base mb-3 flex flex-col gap-3">
                 <motion.p
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
@@ -79,7 +79,7 @@ const SingleSideToSide = ({
                   aria-label="Contactar"
                   textClass={"text-white"}
                   textClassTwo={"text-white"}
-                  className="bg-accent dark:bg-secondary-gradient px-10 py-3 text-white flex items-center justify-center  text-sm tracking-widest"
+                  className="bg-accent dark:bg-secondary-gradient px-10 py-3 text-white flex items-center justify-center  text-base tracking-widest"
                 >
                   {homeDic.singlesides.boxOne.btnText}
                 </ButtonMotion>

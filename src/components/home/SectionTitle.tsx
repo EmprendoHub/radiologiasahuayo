@@ -51,7 +51,7 @@ const SectionTitle = ({
           stiffness: 260,
           damping: 20,
         }}
-        className="text-sm maxmd:text-sm font-secondary "
+        className="text-lg maxmd:text-base font-secondary "
       >
         {subtitle}
       </motion.p>

@@ -20,7 +20,7 @@ export default async function Home({
   return (
     <div className="overflow-x-hidden">
       <ImageHero homeDic={homeDic} lang={lang} />
-      <Marquee />
+      <Marquee lang={lang} />
       {/* <DoubleSideToSide homeDic={homeDic} lang={lang} /> */}
       <CategoriesComp categoryDic={categoryDic} />
       <HeroSlider homeDic={homeDic} />

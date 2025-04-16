@@ -52,7 +52,7 @@ const SingleSideToSide = ({
                 <span className=" text-dark">
                   {homeDic.singlesides.boxOne.title}{" "}
                 </span>
-                <span className="text-primary dark:text-white">
+                <span className="text-accent dark:text-white">
                   {homeDic.singlesides.boxOne.titleTwo}
                 </span>
               </motion.h2>

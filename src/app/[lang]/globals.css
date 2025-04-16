@@ -22,7 +22,7 @@ body {
     --secondary-foreground: hsl(0 0% 9%);
     --muted: hsla(194, 13%, 68%, 0.637);
     --muted-foreground: hsla(0, 0%, 78%, 0.918);
-    --accent: hsl(206, 33%, 74%);
+    --accent: hsl(206, 23%, 37%);
     --accent-foreground: hsl(0 0% 9%);
     --destructive: hsl(0 84.2% 60.2%);
     --destructive-foreground: hsl(0 0% 98%);

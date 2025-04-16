@@ -13,9 +13,9 @@ import localFont from "next/font/local";
 
 // Font files can be colocated inside of `app`
 const myFont = localFont({
-  src: "../../fonts/Swis721_BT_Bold.ttf",
+  src: "../../fonts/EuralDB_Normal.ttf",
   display: "swap",
-  variable: "--font-square-bold",
+  variable: "--font-eural-nomral",
 });
 
 export const metadata: Metadata = {

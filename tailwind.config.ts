@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["var(--font-square-bold)"],
+        primary: ["var(--font-eural-nomral)"],
         secondary: ["Montserrat", "sans-serif"],
       },
       colors: {

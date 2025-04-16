@@ -27,7 +27,7 @@ const SectionTitle = ({
         }}
         className="font-primary mb-4"
       >
-        <span className="text-primary dark:text-white">{title} </span>
+        <span className="text-accent dark:text-white">{title} </span>
         <span className="text-dark dark:text-primary">{titleTwo}</span>
       </motion.h2>
 

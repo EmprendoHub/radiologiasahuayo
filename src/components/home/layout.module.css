@@ -15,7 +15,7 @@
     fill: transparent;
     stroke-dasharray: 188;
     stroke-dashoffset: 188;
-    stroke: #22a5c5;
+    stroke: #7a979e;
     transform-origin: 50% 50%;
     transform: rotate(-270deg);
     transition: all 800ms ease;
@@ -23,7 +23,7 @@
 
   &:hover {
     cursor: pointer;
-    color: #22a5c5;
+    color: #7a979e;
 
     .background {
       stroke: transparent;

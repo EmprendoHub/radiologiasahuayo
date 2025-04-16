@@ -21,7 +21,7 @@ const ContactComponent = ({
           </p>
           <h2 className="text-3xl text-gray-800 dark:text-gray-300 font-primary leading-none mb-3 text-center">
             <span>{homeDic.sideText.title} </span>
-            <span className="text-primary">{homeDic.sideText.titleTwo}</span>
+            <span className="text-accent">{homeDic.sideText.titleTwo}</span>
           </h2>
           <p className="text-center text-xl maxsm:text-3xl font-primary mb-1">
             <span>{contactDic.contactInfo.title} </span>
@@ -30,7 +30,7 @@ const ContactComponent = ({
           <p className="text-center font-secondary italic maxlg:text-base">
             {contactDic.contactInfo.subtitle}
           </p>
-          <p className="text-center text-4xl mt-4 text-primary font-primary">
+          <p className="text-center text-4xl mt-4 text-accent font-primary">
             <Link href={"tel:+523535317465"}>
               {contactDic.contactInfo.phone}
             </Link>
@@ -76,7 +76,7 @@ const ContactComponent = ({
                       />
                     </g>
                   </svg>
-                  <FaFacebookF className="absolute text-base group-hover:text-secondary ease-in-out duration-700 z-0" />
+                  <FaFacebookF className="absolute text-2xl group-hover:text-secondary ease-in-out duration-700 z-0" />
                 </Link>
 
                 {/* WhatsApp */}
@@ -106,7 +106,7 @@ const ContactComponent = ({
                       />
                     </g>
                   </svg>
-                  <FaWhatsapp className="absolute text-base group-hover:text-dark ease-in-out duration-700 z-0" />
+                  <FaWhatsapp className="absolute text-2xl group-hover:text-dark ease-in-out duration-700 z-0" />
                 </Link>
               </div>
             </div>
@@ -117,7 +117,7 @@ const ContactComponent = ({
                 {contactDic.contactInfo.questions}
               </p>
               <Link href={"mailto:radiologiasahuayo@gmail.com"}>
-                <p className="text-center text-3xl text-primary hover:text-secondary ease-in-out duration-700">
+                <p className="text-center text-3xl text-accent hover:text-secondary ease-in-out duration-700">
                   contacto@radiologiasahuayo.com
                 </p>
               </Link>

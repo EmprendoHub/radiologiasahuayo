@@ -8,7 +8,7 @@ const backgroundVariant = {
     backgroundColor: "#202938",
   },
   hover: {
-    backgroundColor: "#3349c5",
+    backgroundColor: "#617898 ",
     transition: {
       delay: 0.1,
       duration: 0.5,

@@ -5,8 +5,9 @@ import React from "react";
 import { GiDiscussion } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { ButtonMotion } from "../motion/ButtonMotion";
-import { FaDiagnoses, FaXRay } from "react-icons/fa";
+import { FaDiagnoses } from "react-icons/fa";
 import Image from "next/image";
+import { CiTimer } from "react-icons/ci";
 // import Image from "next/image";
 
 type Props = {
@@ -101,8 +102,13 @@ const ImageHero = ({ homeDic, lang }: Props) => {
               {homeDic.imageHero.btnTextTwo}
             </ButtonMotion>
           </div>
-          <p className="text-lg mt-2 font-secondary">
+          <p className="text-base mt-2 font-secondary">
             {homeDic.imageHero.btnText}
+          </p>
+          <p className="text-base font-bold font-accent">
+            {lang === "es"
+              ? "FRENTE AL HOSPITAL REGIONAL"
+              : "IN FRONT OF THE REGIONAL HOSPITAL"}
           </p>
         </div>
       </div>
@@ -121,8 +127,8 @@ const ImageHero = ({ homeDic, lang }: Props) => {
             className=" w-80 maxsm:w-auto flex flex-col items-center justify-start px-6 maxsm:px-1 py-4 border-r-2 border-primary"
           >
             <div className=" flex flex-col maxlg:items-center items-center justify-start w-full">
-              <FaXRay size={60} className="text-primary mb-2" />{" "}
-              <span className=" leading-none text-2xl maxlg:text-sm text-center font-semibold">
+              <CiTimer size={60} className="text-primary mb-2" />{" "}
+              <span className=" leading-none text-2xl maxlg:text-sm text-center font-semibold font-primary">
                 {lang === "es"
                   ? "Puntualidad y precisión"
                   : "Punctuality and precision"}
@@ -153,7 +159,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
                 height={250}
                 className="h-16 w-auto mb-2"
               />
-              <span className="text-2xl leading-none  maxlg:text-sm text-center font-semibold">
+              <span className="text-2xl leading-none  maxlg:text-sm text-center font-semibold font-primary">
                 {lang === "es"
                   ? "Equipos de Última Generación"
                   : "State-of-the-art equipment"}
@@ -178,7 +184,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
           >
             <div className=" flex flex-col maxlg:items-center  items-center justify-start w-full">
               <GiDiscussion size={60} className="text-primary mb-2" />{" "}
-              <span className="text-2xl leading-none  maxlg:text-sm text-center font-semibold">
+              <span className="text-2xl leading-none  maxlg:text-sm text-center font-semibold font-primary">
                 {lang === "es"
                   ? "Atención Amable y Personalizada"
                   : "Friendly and personalized attention"}
@@ -203,7 +209,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
           >
             <div className=" flex flex-col maxlg:items-center items-center justify-start w-full">
               <FaDiagnoses size={60} className="text-primary mb-2" />{" "}
-              <span className="text-2xl leading-none maxlg:text-sm text-center font-semibold">
+              <span className="text-2xl leading-none maxlg:text-sm text-center font-semibold font-primary">
                 {lang === "es"
                   ? "Certeza de Diagnóstico"
                   : "Diagnostic certainty"}

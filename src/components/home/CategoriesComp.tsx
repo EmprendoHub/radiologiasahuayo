@@ -71,7 +71,7 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
                 stiffness: 260,
                 damping: 20,
               }}
-              className=" text-4xl font-primary tracking-wide"
+              className=" text-4xl maxsm:text-3xl font-primary tracking-wide text-center"
             >
               {category.title}
             </motion.span>

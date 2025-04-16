@@ -5,7 +5,7 @@ const WhiteLogoH = ({ className }: { className?: string }) => {
     <div className={`relative flex ${className}`}>
       <Image
         alt="image"
-        src={"/logos/dark_logo_horizontal.svg"}
+        src={"/logos/dark_logo_horizontal.webp"}
         width={550}
         height={550}
         priority

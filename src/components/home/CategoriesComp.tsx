@@ -31,7 +31,7 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
         />
       </div>
       <div className="relative flex flex-wrap maxsm:flex-col items-center justify-center gap-10 w-full ">
-        {categoryDic.categories.map((category, index) => (
+        {categoryDic.categories.map((category) => (
           <div
             key={category.title}
             className="w-auto cursor-pointer hover:scale-[105%] duration-300 ease-in-out mx-auto flex flex-col items-center justify-center gap-2"

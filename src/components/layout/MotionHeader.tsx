@@ -6,6 +6,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 // import styles from "./_navbar.module.css";
 import WhiteLogoH from "./WhiteLogo";
+import DarkLogo from "./DarkLogo";
 // import TopBar from "./TopBar";
 
 const MotionHeader = ({
@@ -63,8 +64,19 @@ const MotionHeader = ({
             !transparency ? "" : "bg-gray-300 bg-opacity-50 "
           }`}
         >
-          <Link aria-label="light-logo" href={`/${lang}/`}>
+          <Link
+            aria-label="light-logo"
+            href={`/${lang}/`}
+            className="hidden minmd:block"
+          >
             <WhiteLogoH />
+          </Link>
+          <Link
+            aria-label="dark-logo"
+            href={`/${lang}/`}
+            className="hidden maxmd:block"
+          >
+            <DarkLogo />
           </Link>
           <div className="relative flex items-center justify-end w-full pr-5">
             <motion.div

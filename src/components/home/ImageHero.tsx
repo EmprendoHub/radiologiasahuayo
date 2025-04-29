@@ -28,7 +28,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
     <div className=" relative">
       <div className="w-full bg-white h-[700px]  maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
         {/* overlay */}
-        <div className="absolute bg-white bg-opacity-40 maxmd:bg-black maxmd:bg-opacity-40 w-full h-full z-20 " />
+        <div className="absolute bg-slate-100 bg-opacity-40 maxmd:bg-black maxmd:bg-opacity-40 w-full h-full z-20 " />
         <Image
           src={coverImage}
           width={1920}
@@ -66,7 +66,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
             <span className="text-accent maxmd:text-white font-black">
               {homeDic.imageHero.title}
             </span>
-            <span className=" maxmd:text-accent font-black">
+            <span className=" maxmd:text-primary font-black">
               {homeDic.imageHero.titleTwo}
             </span>
           </motion.h2>

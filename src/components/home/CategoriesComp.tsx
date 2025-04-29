@@ -40,8 +40,7 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
               initial={{ opacity: 0, scale: 0, y: 10 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{
-                duration: 0.7,
-                delay: index * 0.2, // Sequential delay
+                duration: 0.5,
                 type: "tween",
                 stiffness: 260,
                 damping: 20,
@@ -65,8 +64,7 @@ const CategoriesComp = ({ categoryDic }: CategoryProps) => {
               initial={{ opacity: 0, scale: 0, y: 10 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{
-                duration: 0.7,
-                delay: index * 0.2, // Sequential delay
+                duration: 0.5,
                 type: "tween",
                 stiffness: 260,
                 damping: 20,

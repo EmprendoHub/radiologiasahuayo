@@ -28,7 +28,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
     <div className=" relative">
       <div className="w-full bg-white h-[700px]  maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
         {/* overlay */}
-        <div className="absolute bg-black bg-opacity-40 maxmd:bg-opacity-60 w-full h-full z-20 " />
+        <div className="absolute bg-white bg-opacity-40 maxmd:bg-black maxmd:bg-opacity-40 w-full h-full z-20 " />
         <Image
           src={coverImage}
           width={1920}
@@ -63,10 +63,10 @@ const ImageHero = ({ homeDic, lang }: Props) => {
             }}
             className="leading-none mb-3"
           >
-            <span className="text-accent dark:text-white font-black">
+            <span className="text-accent maxmd:text-white font-black">
               {homeDic.imageHero.title}
             </span>
-            <span className=" dark:text-accent font-black">
+            <span className=" maxmd:text-accent font-black">
               {homeDic.imageHero.titleTwo}
             </span>
           </motion.h2>
@@ -80,7 +80,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
               stiffness: 260,
               damping: 20,
             }}
-            className=" font-secondary text-lg mb-8  maxmd:text-sm flex flex-col gap-3"
+            className="maxmd:text-white font-secondary text-lg mb-8  maxmd:text-sm flex flex-col gap-3"
           >
             <p className=" flex items-center gap-2">{homeDic.imageHero.text}</p>
             {homeDic.imageHero.bullets.map((bullet, i) => (
@@ -100,10 +100,10 @@ const ImageHero = ({ homeDic, lang }: Props) => {
               {homeDic.imageHero.btnTextTwo}
             </ButtonMotion>
           </div>
-          <p className="text-base mt-2 font-secondary">
+          <p className="maxmd:text-white text-base mt-2 font-secondary">
             {homeDic.imageHero.btnText}
           </p>
-          <p className="text-base font-bold font-accent">
+          <p className="text-base font-bold font-accent maxmd:text-white">
             {lang === "es"
               ? "FRENTE AL HOSPITAL REGIONAL"
               : "IN FRONT OF THE REGIONAL HOSPITAL"}

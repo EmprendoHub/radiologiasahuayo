@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import styles from "./heroSliderPush.module.scss";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import Link from "next/link";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
 import Image from "next/image";
 
 type Item = {
@@ -79,7 +79,7 @@ const HeroSlider = ({ homeDic }: { homeDic: { sliders: [] } }) => {
                   initial={{ x: -50, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
-                  className="text-base font-secondary mt-2 text-white text-wrap"
+                  className="text-base font-secondary mt-2 text-white text-wrap "
                 >
                   {item.text}
                 </motion.p>
@@ -94,7 +94,7 @@ const HeroSlider = ({ homeDic }: { homeDic: { sliders: [] } }) => {
                     transition={{ duration: 0.8 }}
                     className="text-base font-secondary my-4 gap-x-2 flex items-center text-white text-wrap"
                   >
-                    {item.btnText} <FaArrowRightLong />
+                    {item.btnText} <FaWhatsapp />
                   </motion.button>
                 </Link>
               </div>

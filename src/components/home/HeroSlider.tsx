@@ -84,8 +84,9 @@ const HeroSlider = ({ homeDic }: { homeDic: { sliders: [] } }) => {
                   {item.text}
                 </motion.p>
                 <Link
-                  href={item.btnPath}
+                  href={`https://api.whatsapp.com/send?phone=523535317465&text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios.`}
                   className="px-6 mt-5 border-white border rounded-sm"
+                  target="_blank"
                 >
                   <motion.button
                     initial={{ x: -50, opacity: 0 }}

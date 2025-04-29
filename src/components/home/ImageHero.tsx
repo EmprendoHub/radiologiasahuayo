@@ -1,14 +1,12 @@
 "use client";
 import React from "react";
-// import coverImage from "../../../public/images/xray-scaled.jpg";
-// import Image from "next/image";
+import coverImage from "../../../public/images/xray-scaled.jpg";
 import { GiDiscussion } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { ButtonMotion } from "../motion/ButtonMotion";
 import { FaDiagnoses } from "react-icons/fa";
 import Image from "next/image";
 import { CiTimer } from "react-icons/ci";
-// import Image from "next/image";
 
 type Props = {
   homeDic: {
@@ -30,8 +28,8 @@ const ImageHero = ({ homeDic, lang }: Props) => {
     <div className=" relative">
       <div className="w-full bg-white h-[700px]  maxmd:h-[600px] overflow-hidden top-0 relative flex justify-start items-center">
         {/* overlay */}
-        {/* <div className="absolute bg-black bg-opacity-40 maxmd:bg-opacity-60 w-full h-full z-20 " /> */}
-        {/* <Image
+        <div className="absolute bg-black bg-opacity-40 maxmd:bg-opacity-60 w-full h-full z-20 " />
+        <Image
           src={coverImage}
           width={1920}
           height={1080}
@@ -39,8 +37,8 @@ const ImageHero = ({ homeDic, lang }: Props) => {
           loading="eager"
           alt="portfolio image"
           className="w-auto h-full absolute top-0 right-0 z-10"
-        /> */}
-        <div className="w-[60%] maxmd:w-full h-full absolute bottom-0 right-0 z-10">
+        />
+        {/* <div className="w-[60%] maxmd:w-full h-full absolute bottom-0 right-0 z-10">
           <video
             width={1080}
             height={1080}
@@ -52,7 +50,7 @@ const ImageHero = ({ homeDic, lang }: Props) => {
             <source src={"/videos/Body_cuerpo_completo.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
         <div className=" pl-40 maxlg:pl-20 maxmd:pl-5 z-20 text-7xl maxlg:text-6xl maxsm:text-4xl font-primary w-3/4 maxmd:w-[90%] ">
           <motion.h2
             initial={{ opacity: 0, scale: 1, y: -10 }}
